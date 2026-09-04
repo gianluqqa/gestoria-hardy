@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     "Duplicado de cédula",
   ],
   authors: [{ name: "Gian Luca Caravone" }],
+  icons: {
+    icon: "/logo-gestoria-hardy-dos.jpeg",
+    shortcut: "/logo-gestoria-hardy-dos.jpeg",
+    apple: "/logo-gestoria-hardy-dos.jpeg",
+  },
   openGraph: {
     title: "Gian Luca Caravone | Mandatario del Automotor",
     description: "Gestión transparente, profesional y rápida de trámites automotores en Rosario, Santa Fe.",
@@ -30,6 +35,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 
 export default function RootLayout({
   children,
