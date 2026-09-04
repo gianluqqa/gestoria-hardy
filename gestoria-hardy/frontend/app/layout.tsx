@@ -9,7 +9,7 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Gian Luca Caravone | Mandatario del Automotor en Rosario",
+  title: "Gestoria Hardy",
   description:
     "Gestión integral de trámites del automotor en Rosario, Santa Fe. Transferencias, denuncias de compra y venta, informes de dominio, duplicados de cédulas, títulos y chapas patentes. Asesoramiento profesional y personalizado.",
   keywords: [
