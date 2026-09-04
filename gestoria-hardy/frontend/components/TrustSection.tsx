@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { UserCheck, ShieldCheck, Clock, HeartHandshake, FileText, CheckCircle } from "lucide-react";
+
 
 export function TrustSection() {
   const trustPoints = [
@@ -50,14 +52,20 @@ export function TrustSection() {
           <div className="lg:col-span-6 bg-[#16233B] text-white p-8 rounded-2xl border border-[#E2BD68]/30 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-48 h-48 bg-[#E2BD68]/10 rounded-full blur-2xl pointer-events-none" />
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center font-bold text-xl">
-                GC
+              <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#E2BD68] shadow-md bg-white shrink-0">
+                <Image
+                  src="/logo-gestoria-hardy-dos.jpeg"
+                  alt="Logo Gestoría Hardy"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h4 className="font-bold text-lg text-white">Gian Luca Caravone</h4>
                 <p className="text-xs text-[#E2BD68] font-medium">Mandatario del Automotor - Rosario, Santa Fe</p>
               </div>
             </div>
+
             <p className="text-slate-300 text-sm italic leading-relaxed">
               &quot;Mi compromiso es brindar un servicio ágil, transparente y seguro. Protejo la tranquilidad jurídica de mis clientes para que comprar o vender su vehículo sea un proceso rápido y sin sorpresas.&quot;
             </p>
@@ -88,37 +96,40 @@ export function TrustSection() {
         </div>
 
         {/* Process Steps */}
-        <div className="mt-16 pt-12 border-t border-slate-100">
-          <h3 className="text-center text-xl font-bold text-[#16233B] mb-8">
-            Paso a paso: Cómo trabajamos juntos
+        <div className="mt-16 bg-[#16233B] text-white p-8 sm:p-12 rounded-3xl border border-[#E2BD68]/30 shadow-xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#E2BD68]/5 rounded-full blur-3xl pointer-events-none" />
+          
+          <h3 className="text-center text-xl sm:text-2xl font-bold text-white mb-10 tracking-tight">
+            Paso a paso: <span className="text-[#E2BD68]">Cómo trabajamos juntos</span>
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-10 h-10 rounded-full bg-[#16233B] text-[#E2BD68] font-bold text-sm flex items-center justify-center mb-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 relative z-10">
+            <div className="flex flex-col items-center text-center p-5 bg-[#1E293B]/70 rounded-2xl border border-slate-700/60 shadow-sm hover:border-[#E2BD68]/50 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#E2BD68] text-[#16233B] font-extrabold text-lg flex items-center justify-center mb-4 shadow-md">
                 1
               </div>
-              <h4 className="font-bold text-slate-800 text-sm mb-1">Contacto e Informe</h4>
-              <p className="text-xs text-slate-500">Me enviás los datos del vehículo y evaluamos la situación registral.</p>
+              <h4 className="font-bold text-white text-base mb-2">Contacto e Informe</h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">Me enviás los datos del vehículo y evaluamos la situación registral.</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-10 h-10 rounded-full bg-[#16233B] text-[#E2BD68] font-bold text-sm flex items-center justify-center mb-3">
+            <div className="flex flex-col items-center text-center p-5 bg-[#1E293B]/70 rounded-2xl border border-slate-700/60 shadow-sm hover:border-[#E2BD68]/50 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#E2BD68] text-[#16233B] font-extrabold text-lg flex items-center justify-center mb-4 shadow-md">
                 2
               </div>
-              <h4 className="font-bold text-slate-800 text-sm mb-1">Gestión & Firma</h4>
-              <p className="text-xs text-slate-500">Preparación de formularios oficiales y coordinación de firmas correspondientes.</p>
+              <h4 className="font-bold text-white text-base mb-2">Gestión & Firma</h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">Preparación de formularios oficiales y coordinación de firmas correspondientes.</p>
             </div>
 
-            <div className="flex flex-col items-center text-center p-4">
-              <div className="w-10 h-10 rounded-full bg-[#16233B] text-[#E2BD68] font-bold text-sm flex items-center justify-center mb-3">
+            <div className="flex flex-col items-center text-center p-5 bg-[#1E293B]/70 rounded-2xl border border-slate-700/60 shadow-sm hover:border-[#E2BD68]/50 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-[#E2BD68] text-[#16233B] font-extrabold text-lg flex items-center justify-center mb-4 shadow-md">
                 3
               </div>
-              <h4 className="font-bold text-slate-800 text-sm mb-1">Inscripción & Entrega</h4>
-              <p className="text-xs text-slate-500">Presentación ante el Registro y posterior entrega de documentación final.</p>
+              <h4 className="font-bold text-white text-base mb-2">Inscripción & Entrega</h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">Presentación ante el Registro y posterior entrega de documentación final.</p>
             </div>
           </div>
         </div>
+
 
       </div>
     </section>

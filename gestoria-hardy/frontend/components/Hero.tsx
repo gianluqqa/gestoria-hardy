@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MessageCircle, ShieldCheck, ArrowRight, Clock, FileCheck, CheckCircle2 } from "lucide-react";
 
 export function Hero() {
@@ -5,11 +6,7 @@ export function Hero() {
     "https://wa.me/543412149033?text=Hola%20Gian%20Luca,%20quisiera%20consultar%20sobre%20la%20gesti%C3%B3n%20de%20un%20tr%C3%A1mite%20automotor.";
 
   return (
-    <section id="inicio" className="relative overflow-hidden bg-gradient-to-b from-[#16233B] via-[#1B2B48] to-[#0F172A] text-white py-20 lg:py-28">
-      {/* Dynamic Background Glows & Accent Gradients */}
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-[#E2BD68]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-
+    <section id="inicio" className="relative overflow-hidden bg-[#16233B] text-white py-20 lg:py-28">
       {/* Grid Pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
@@ -20,7 +17,7 @@ export function Hero() {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E2BD68]/15 border border-[#E2BD68]/30 text-[#E2BD68] text-xs font-semibold tracking-wide uppercase">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E293B] border border-[#E2BD68]/30 text-[#E2BD68] text-xs font-semibold tracking-wide uppercase">
               <ShieldCheck className="w-4 h-4" />
               <span>Gestión Oficial & Asesoramiento Profesional</span>
             </div>
@@ -28,15 +25,17 @@ export function Hero() {
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Trámites Automotores con{" "}
-              <span className="bg-gradient-to-r from-[#E2BD68] via-[#F7E9C7] to-[#D4AF37] bg-clip-text text-transparent">
+              <span className="text-[#E2BD68]">
                 Seguridad, Rapidez y Confianza
               </span>
             </h1>
 
+
             {/* Description */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Soy <strong className="text-white font-semibold">Gian Luca Caravone</strong>, Mandatario del Automotor en Rosario, Santa Fe. Me encargo personalmente de simplificar, agilizar y resolver la documentación de tu vehículo para que no pierdas tiempo ni tengas imprevistos.
+              Soy <strong className="text-white font-semibold">Gian Luca Caravone</strong>, Mandatario del Automotor en Rosario, Santa Fe. Me encargo de la gestión integral de tu vehículo: desde trámites registrales nacionales (DNRPA) hasta el alta, baja y regularización de patentes a nivel <strong className="text-[#E2BD68]">Provincial (API Santa Fe) y Municipal</strong>.
             </p>
+
 
             {/* CTA Group */}
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -90,14 +89,20 @@ export function Hero() {
 
           {/* Feature Hero Card / Brand Shield */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-md bg-gradient-to-b from-[#1E293B]/90 to-[#0F172A]/90 p-8 rounded-2xl border border-[#E2BD68]/30 shadow-2xl backdrop-blur-md">
+            <div className="relative w-full max-w-md bg-[#1E293B] p-8 rounded-2xl border border-[#E2BD68]/30 shadow-2xl backdrop-blur-md">
+
               <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-[#E2BD68] flex items-center justify-center text-[#0F172A] shadow-md font-extrabold text-xl">
                 ★
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-20 h-20 mx-auto rounded-full bg-[#16233B] border-2 border-[#E2BD68] flex items-center justify-center text-[#E2BD68] font-extrabold text-3xl shadow-inner">
-                  GC
+                <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-[#E2BD68] shadow-lg bg-white">
+                  <Image
+                    src="/logo-gestoria-hardy-dos.jpeg"
+                    alt="Logo Gestoría Hardy"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 
                 <div>
@@ -109,7 +114,11 @@ export function Hero() {
                 <div className="bg-[#16233B]/80 rounded-xl p-4 border border-slate-700/60 text-left space-y-2.5 text-xs text-slate-300">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#E2BD68] shrink-0" />
-                    <span>Transferencias e Inscripciones</span>
+                    <span>Inscripciones Registrales (DNRPA)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#E2BD68] shrink-0" />
+                    <span>Altas y Bajas de Patente (API Santa Fe / Municipio)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#E2BD68] shrink-0" />
@@ -117,13 +126,10 @@ export function Hero() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#E2BD68] shrink-0" />
-                    <span>Duplicados de Cédulas, Título y Patentes</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#E2BD68] shrink-0" />
-                    <span>Trámites Técnicos (RPA, RPM, Altas/Bajas)</span>
+                    <span>Duplicados de Cédula, Título y Patentes</span>
                   </div>
                 </div>
+
 
                 <a
                   href={whatsappUrl}

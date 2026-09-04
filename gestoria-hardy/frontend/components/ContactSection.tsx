@@ -59,74 +59,76 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
           
           {/* Left Column: Direct Contact Info */}
-          <div className="lg:col-span-5 space-y-8 bg-[#16233B]/90 p-8 rounded-3xl border border-[#E2BD68]/30 shadow-xl backdrop-blur-md">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#E2BD68]">
-                Datos Profesionales
-              </span>
-              <h3 className="text-2xl font-bold text-white mt-1">
-                Gian Luca Caravone
-              </h3>
-              <p className="text-sm text-[#F7E9C7] font-semibold mt-0.5">
-                Mandatario del Automotor
-              </p>
-            </div>
-
-            <div className="space-y-6 text-sm">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center shrink-0 font-bold shadow-md">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="text-xs text-slate-400 block uppercase font-medium">
-                    Ubicación
-                  </span>
-                  <span className="text-base font-semibold text-white">
-                    Rosario, Santa Fe, Argentina
-                  </span>
-                  <span className="text-xs text-slate-400 block mt-0.5">
-                    (Gestiones en Rosario y zona de influencia)
-                  </span>
-                </div>
+          <div className="lg:col-span-5 flex flex-col justify-between bg-[#16233B]/90 p-8 rounded-3xl border border-[#E2BD68]/30 shadow-xl backdrop-blur-md h-full space-y-6">
+            <div className="space-y-6">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#E2BD68]">
+                  Datos Profesionales
+                </span>
+                <h3 className="text-2xl font-bold text-white mt-1">
+                  Gian Luca Caravone
+                </h3>
+                <p className="text-sm text-[#F7E9C7] font-semibold mt-0.5">
+                  Mandatario del Automotor
+                </p>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center shrink-0 font-bold shadow-md">
-                  <Phone className="w-5 h-5" />
+              <div className="space-y-6 text-sm">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center shrink-0 font-bold shadow-md">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs text-slate-400 block uppercase font-medium">
+                      Ubicación
+                    </span>
+                    <span className="text-base font-semibold text-white">
+                      Rosario, Santa Fe, Argentina
+                    </span>
+                    <span className="text-xs text-slate-400 block mt-0.5">
+                      (Gestiones en Rosario y zona de influencia)
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-xs text-slate-400 block uppercase font-medium">
-                    Teléfono / WhatsApp
-                  </span>
-                  <a
-                    href="tel:3412149033"
-                    className="text-base font-semibold text-white hover:text-[#E2BD68] transition-colors"
-                  >
-                    341 214-9033
-                  </a>
-                  <span className="text-xs text-slate-400 block mt-0.5">
-                    Atención directa a consultas
-                  </span>
-                </div>
-              </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center shrink-0 font-bold shadow-md">
-                  <Clock className="w-5 h-5" />
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center shrink-0 font-bold shadow-md">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs text-slate-400 block uppercase font-medium">
+                      Teléfono / WhatsApp
+                    </span>
+                    <a
+                      href="tel:3412149033"
+                      className="text-base font-semibold text-white hover:text-[#E2BD68] transition-colors"
+                    >
+                      341 214-9033
+                    </a>
+                    <span className="text-xs text-slate-400 block mt-0.5">
+                      Atención directa a consultas
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  <span className="text-xs text-slate-400 block uppercase font-medium">
-                    Modalidad de Atención
-                  </span>
-                  <span className="text-base font-semibold text-white">
-                    Presencial y Virtual
-                  </span>
-                  <span className="text-xs text-slate-400 block mt-0.5">
-                    Recepción de documentación y coordinación de turnos
-                  </span>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-[#E2BD68] text-[#16233B] flex items-center justify-center shrink-0 font-bold shadow-md">
+                    <Clock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs text-slate-400 block uppercase font-medium">
+                      Modalidad de Atención
+                    </span>
+                    <span className="text-base font-semibold text-white">
+                      Presencial y Virtual
+                    </span>
+                    <span className="text-xs text-slate-400 block mt-0.5">
+                      Recepción de documentación y coordinación de turnos
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -146,7 +148,8 @@ export function ContactSection() {
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="lg:col-span-7 bg-white text-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl">
+          <div className="lg:col-span-7 bg-white text-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl flex flex-col justify-between h-full">
+
             <h3 className="text-xl font-bold text-[#16233B] mb-2">
               Formulario de Consulta Rápida
             </h3>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MapPin, Phone, ShieldCheck, ArrowUp } from "lucide-react";
 
 export function Footer() {
@@ -11,18 +12,24 @@ export function Footer() {
           {/* Col 1: Branding & Intro */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-[#16233B] border border-[#E2BD68]/40 flex items-center justify-center text-[#E2BD68] font-bold text-base shadow-sm">
-                GC
+              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#E2BD68] shadow-sm bg-white shrink-0">
+                <Image
+                  src="/logo-gestoria-hardy-dos.jpeg"
+                  alt="Gestoría Hardy Logo"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-base font-extrabold tracking-tight text-white leading-tight">
-                  GIAN LUCA CARAVONE
-                </span>
+GESTORIA HARDY                </span>
                 <span className="text-[10px] font-semibold tracking-wider text-[#D4AF37] uppercase">
-                  Mandatario del Automotor
+                  Gian Luca Caravone <span className="text-slate-300 font-bold mx-0.5">|</span> Mandatario del Automotor
                 </span>
+
               </div>
             </div>
+
 
             <p className="text-xs text-slate-400 leading-relaxed">
               Gestión profesional, transparente y eficiente de trámites registrales automotores en Rosario, Santa Fe y zonas de influencia.
@@ -131,11 +138,12 @@ export function Footer() {
                   href="https://wa.me/543412149033?text=Hola%20Gian%20Luca,%20necesito%20realizar%20un%20tr%C3%A1mite."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-[#16233B] hover:bg-[#1E293B] text-[#E2BD68] border border-[#E2BD68]/30 px-3 py-2 rounded-lg text-xs font-semibold w-full transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#E2BD68] hover:bg-[#d8b15a] text-[#16233B] px-3 py-2.5 rounded-lg text-xs font-extrabold w-full transition-colors shadow-sm"
                 >
                   WhatsApp Directo
                 </a>
               </div>
+
             </div>
           </div>
 
