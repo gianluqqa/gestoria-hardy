@@ -34,14 +34,14 @@ export function Services() {
     {
       id: "transferencias",
       icon: ArrowLeftRight,
-      title: "Transferencias",
+      title: "Inscripciones & Transferencias",
       badge: "Trámite Frecuente",
       description:
-        "Gestión integral de transferencias de dominio para vehículos usados, 0k y motovehiculos.",
+        "Inscripción inicial de 0km y gestión integral de transferencias de dominio para automotores, motos y maquinarias.",
       items: [
-        "Transferencia de automotores y motos",
-        "Control de documentación previa",
-        "Liquidación e inscripción registral",
+        "Inscripción Inicial de vehículos 0km",
+        "Transferencia de automotores y motovehículos usados",
+        "Control de documentación previa e inscripción registral",
       ],
     },
     {
@@ -64,13 +64,14 @@ export function Services() {
       title: "Denuncias",
       badge: "Protección Legal",
       description:
-        "Protegé tu responsabilidad civil y legal registrando debidamente la venta o compra de la unidad.",
+        "Protegé tu responsabilidad civil y patrimonio asentando denuncias de venta, compra o siniestros por robo/hurto.",
       items: [
         "Denuncia de Venta (exoneración de responsabilidad)",
         "Denuncia de Compra / Posesión",
-        "Notificación fehaciente al registro",
+        "Denuncia de Robo o Hurto ante Registro Nacional",
       ],
     },
+
     {
       id: "informes",
       icon: FileSearch,

@@ -209,8 +209,9 @@ export function ContactSection() {
                     }
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#16233B] focus:border-transparent text-sm bg-slate-50 text-slate-900"
                   >
-                    <option value="Transferencia">Transferencia de Dominio</option>
-                    <option value="Denuncia de Venta / Compra">Denuncia de Venta / Compra</option>
+                    <option value="Inscripción Inicial / Transferencia">Inscripción Inicial 0km / Transferencia</option>
+                    <option value="Denuncia de Venta / Compra / Robo">Denuncia de Venta / Compra / Robo o Hurto</option>
+
                     <option value="Informe de Dominio">Informe de Dominio / Inhibición</option>
                     <option value="Duplicado de Cédula / Título / Patente">Duplicado de Cédula / Título / Patente</option>
                     <option value="Trámite Técnico (RPA / RPM / Bajas)">Trámite Técnico (RPA / RPM / Bajas)</option>
