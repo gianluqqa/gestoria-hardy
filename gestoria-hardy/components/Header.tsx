@@ -54,7 +54,7 @@ export function Header() {
               className="flex items-center gap-1.5 hover:text-[#E2BD68] transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-[#E2BD68]" />
-              <span className="font-medium">341 214-9033</span>
+              <span className="font-medium">341-214-9033</span>
             </a>
           </div>
         </div>

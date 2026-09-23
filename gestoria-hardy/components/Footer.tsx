@@ -130,7 +130,7 @@ GESTORIA HARDY                </span>
                   href="tel:3412149033"
                   className="hover:text-[#E2BD68] transition-colors font-medium text-white"
                 >
-                  341 214-9033
+                  341-214-9033
                 </a>
               </div>
               <div className="pt-2">

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { UserCheck, ShieldCheck, Clock, HeartHandshake, FileText, CheckCircle } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 
 export function TrustSection() {
@@ -77,20 +78,24 @@ export function TrustSection() {
           {trustPoints.map((point, idx) => {
             const Icon = point.icon;
             return (
-              <div
+              <ScrollReveal
                 key={idx}
-                className="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-[#E2BD68] hover:bg-white transition-all duration-300 shadow-sm hover:shadow-md group"
+                variant="fade-up"
+                delay={idx * 100}
+                duration={600}
               >
-                <div className="w-12 h-12 rounded-lg bg-[#16233B] text-[#E2BD68] flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
-                  <Icon className="w-6 h-6" />
+                <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-[#E2BD68] hover:bg-white transition-all duration-300 shadow-sm hover:shadow-md group h-full">
+                  <div className="w-12 h-12 rounded-lg bg-[#16233B] text-[#E2BD68] flex items-center justify-center mb-4 group-hover:scale-105 transition-transform">
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#16233B] mb-2">
+                    {point.title}
+                  </h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {point.description}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-[#16233B] mb-2">
-                  {point.title}
-                </h3>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  {point.description}
-                </p>
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>
